@@ -1,0 +1,1218 @@
+*Tipos de variáveis{
+
+Let: É mutável
+
+const: É imutável
+}
+
+
+*Tipos de Primitivos{
+
+string:
+let nome = 'João'; //string literal
+
+
+number:
+let idade = 17; //number literal
+
+
+boolean:
+let estaAprovado = true; //boolean
+
+
+undefined:
+let sobrenome ; //Undefined
+
+
+redefnir:
+let corSelecionado = null; //redefnir um valor
+}
+
+
+*typeof{
+
+Se vc usar o typeof 'nome da variável', dá para ver que tipo de variável é.
+
+Exemplos:
+
+No programa:
+let idade = 25;
+let nome= 'João';
+
+No console:
+typeof idade
+=number
+
+typeof nome
+=String
+}
+
+
+*Objetos {
+    Um jeito de armazenar várias variáveis.
+    Exemplos:
+    let pessoa = {
+    nome: 'João',
+    idade: 17,
+    estaAprovado: true,
+    sobrenome: 'Luiz',
+};
+
+    console.log(pessoa);
+
+}
+
+
+*Arrays{
+    Umas lista com várias coisas, ao invés de fazer vários lets.
+
+    let exemplo = ['João', 17, 'Minas'];
+    console.log(exemplo[0]); <== Vai imprimir João
+    console.log(exemplo[1]); <== Vai imprimir 17
+    console.log(exemplo[2]); <== Vai imprimir Minas
+
+
+    Exemplos:
+
+    let familiaIdade = [26,45,50,,17];
+    console.log(familia.length)
+    console.log(familia[3])
+
+    let nomeColega = ['Luiz','Meio do mato', 18];
+    console.log(nomeColega[0]);
+    console.log(nomeColega[1]);
+    console.log(nomeColega[2]);
+}
+
+*Função{
+    Ela vai controlar o fluxo de tudo, ela pode tbm mudar valores.
+    Exemplo:
+
+    let corSite = "azul";
+    function resetaCor(cor,tonalidade){
+        corSite = cor + '' + tonalidade; <==  O '' serve parar colocar o espaço
+    };
+
+    console.log(corSite); <== Vai imprimir azul
+    resetaCor("Verde","claro"); <== Chamando essa função podemos mudar os valores
+    console.log(corSite); <== Agora vai imprimir Verde Claro
+
+
+}
+
+*Tipos de funções{
+
+ .Realizar uma tarefa, não devolve nada.
+
+    function dizerNome(){
+        console.log('João');
+    };
+
+    dizerNome();
+
+ .Faz umcálculo ou operação e retorna algo.
+
+    function MultiplicarPorDois(valor){
+        return valor * 2
+    }
+
+    console.log(MultiplicarPorDois(5));
+
+    let resultado = MultiplicarPorDois(5);
+
+    console.log(resultado);
+
+}
+
+*Operadores{
+    // Operradores Aritiméticos(matemáticos)
+    // Operadores de Atribuição
+    // Operadores de Comparação
+    // Operadores Lógicos
+    // Operadores Bitwise
+}
+
+* Operradores Aritiméticos{
+    // Operadores Aritiméticos
+
+    console.log('Operações nrmls')
+    let salario = 100;
+
+    // +, -, *, /, **
+
+    console.log('+:')
+    console.log(salario + salario);
+    console.log('-:')
+    console.log(salario - salario);
+    console.log('*:')
+    console.log(salario * salario);
+    console.log('/:')
+    console.log(salario / salario);
+    console.log('**:')
+    console.log(5 ** 5);
+
+
+    console.log('Com ++ --')
+    // ++ -- 
+
+    let idade = 18;
+
+    console.log(idade++); <== Vai imprimir 18 pq o ++ está na frente, indicando que da próxima vez que a idade for 
+    puchada vai estar com 19.
+    
+    console.log(idade--); <== Vai imprimir 18 pq o -- está atrás, indicando que da próxima vez que a idade for puchada
+     vai estar com 17.
+
+    Para ter uma resposta imediata com a alteração do valor, é so colocar os sinais na frente, indicando que a alteração será imediata.
+}
+
+*Operador de Atribuição{
+
+    let valorTecladoGamer = 100;
+
+valorTecladoGamer += valorTecladoGamer; <== A msm coisa de fazer valorTecladoGamer = valorTecladoGamer + valorTcladoGamer;
+
+console.log(valorTecladoGamer);
+}
+
+*Operadores de igualdade{
+ºIgualdade estrita:
+console.log( 1 === 1);  <== valor true, pq é o msm valor e o msm tipo.
+
+console.log( '1' === 1);  <== valor false, msm sendo o msm valor n é o msm tipo.
+
+O sinal  === é usado para comparar tanto o msm valor quando o  msm tipo.
+
+_________________________________________________________________________________________________________________________________
+ºIgualdade solta:
+console.log( 1 == 1);   <== valor ´true, pq é o msm valor
+
+console.log( '1' == 1);  <== valor true, pq msm n sendo do msm tipo tem o msm valor.
+
+O sinal == é usado parar comparar só o valor, ignorando  o tipo da variável.
+
+Obs: N é recomendado, pq ele o resultado da sua converção n pode dar resultados vareádos.
+}
+
+*Operador ternário{
+Tem um cliente, se ele tem mais de 100 pontos, se n comum:
+
+let pontos = 200;
+
+let tipo = pontos > 100? 'premium' : 'comum';  <== se pontos for igual a 100 vai ser premium e se n for vai ser comum.
+
+console.log(tipo)
+
+    Os sinais  ? e : agem como if e selse
+}
+
+*Operadores lógicos{
+
+ºOperador E,que é representado por &&, ele retorna true se os dois operandos forem true.
+
+console.log(true && true); // <== Vai responder true, pq os dois valores são true.
+
+console.log(false && true);// <== Vai respoonder false,  pq um é false.
+
+Exemplo:
+
+console.log('Exemplo:')
+console.log('Se tiver carteira de trabalho e é maior de idade, vai poder aplicar.')
+
+console.log('Com E(&&):')
+
+let maiorDeIdade = true;
+let possuiCarteiraDeTrabalho= false;
+let podeAplicar = maiorDeIdade && possuiCarteiraDeTrabalho;
+
+console.log('Pode aplicar com e(&&):',podeAplicar,'.Pq um dos dois é false.');
+
+ºOperador lógico OU, que é representado por  ||, retorna true se um dos operandos for true.
+
+Exemplo:
+
+console.log('Agora com OU(||):')
+
+let podeAplicarDois = maiorDeIdade || possuiCarteiraDeTrabalho;
+
+console.log('Pode aplicar com OU(||):',podeAplicarDois,'.Msm um n sendo true ele ainda considera o outro')
+
+_________________________________________________________________________________________________________________________________________________________________________________
+ºOpeador lógico NOT, que é representado por !, é usado para fazer uma nagação.
+
+Exemplo:
+
+console.log('Com o !, para ver se n pode aplicar ou pode, false significar que o candidato foi aprovado e pode aplicar, true significar que ele n foi aprovado e n pode aplicar')
+let candidatoRecusado =!podeAplicarDois;
+
+console.log('Candidato Resusado:',candidatoRecusado);
+}
+
+
+*Comparações de não boleanos{
+
+ºFalsy:
+
+Undefined
+Null
+0
+False
+''
+NaN - not a number
+_____________________________________________________________________________________________________________________________________
+ºTruthy:
+tudo oq n for oq está no Falsy.
+
+let corPersonalizada = 'Vermelho';
+let corPadrao = 'Azul';
+let corPerfil = corPersonalizada || corPadrao;
+
+console.log(corPerfil);
+
+console.log('O || vai responder o primeiro valor truthy que ele encontrar');
+}
+
+*Trocando valores(Mini-porjeto1){
+    let a = 'Vermelho';
+let b = 'Azul';
+
+let c = a;
+a = b;
+b = c;
+
+console.log(a);
+console.log(b);
+
+a = 'Azul';
+b = 'Vermelho';
+}
+
+*If e alse{
+    
+// Se a hora estiver entre 06:00 até 12:00: Bom dia¹;
+//Se estiver entre 12:00 até 18:00: Boa tarde!;
+//Caso contrário: Boa Noite!;
+
+let hora = 19;
+
+if (hora > 6 && hora  < 12) {
+    console.log('Bom dia!')   
+}
+else if(hora > 12 && hora < 18){
+    console.log('Boa tarde!')
+}
+else{
+    console.log('Boa noite!')
+}
+
+}
+
+
+*Switch e case{
+    let permissao; <== o usuário pode ser: comum,gerente,diretor
+permissao = 'comum'
+
+switch (permissao){
+    case 'comum' : 
+        console.log('Usuário comum')              <== caso seja comum, vai responder "Usuario comum"
+        break;
+
+    case 'gerente' :
+        console.log('Usuario gerente')            <== caso seja gerente, vai responder "Usuario gerente"
+        break;
+
+    case 'diretor' :
+        console.log('Usuário diretor')            <== caso seja diretor, vai responder "Usuario diretor"
+        break;
+
+        default:
+        console.log('Usuário não reconhecido')    <== caso n seja nenhum dos anteriores, vai responder "Usuário não reconhecido"
+}
+
+switch = condissão
+case = reação
+break = final
+default = age como o else
+}
+
+* Laços/Loops{
+    // Imagine que vc quer escrever "Estou aprendendo" 5 vezes.
+// Logo vc tem como reação fazer 5 console.log('Estou aprendendo), mas podemos usar os loops.
+
+// Loops:
+// 1.For
+for(let i = 5; i >= 1; i--){
+    if(i % 2 !== 0){
+        console.log(i);
+    }
+}
+_________________________________________________________________________________________________________________________________   
+// 2.While loop:
+let i = 5;
+
+while (i >= 1){
+    if(i % 2 !== 0){
+        console.log(i);
+    }
+    i--;
+}
+_________________________________________________________________________________________________________________________________
+// 3.Do..while
+let c = i;
+i = 0;
+
+do {
+    console.log('digitando!',i);
+    i++;
+} while (i < 10)
+_________________________________________________________________________________________________________________________________
+// 4.For..in
+
+const pessoa = {
+    nome: 'João',
+    idade: 17
+};
+
+for(let chave in pessoa) {
+    console.log(chave,pessoa['nome']);
+}
+
+const cores = ['Vermelho', 'Azul','Verde'];
+
+for (let indice in cores) {
+    console.log(indice,cores[indice])
+}
+_________________________________________________________________________________________________________________________________
+// // 5.For..of
+// const cores = ['Vermelho', 'Azul','Verde'];
+
+// for(let cor of cores){
+//     console.log(cor);
+// }
+}
+
+
+*Máximo entre dois valores(Mini-projeto 2){
+    let valorMaior = max(9,9);
+
+function max(a,b) {
+    if(a > b){
+        console.log('maior número:',a)
+    }
+    if (b > a) {
+        console.log('maior número:',b)
+    } else {
+        console.log('Os números são iguais')
+    }
+}
+
+*Fizzbuzz(Mini-projeto 3){
+
+// Divisível por 3 ==> Fizz
+
+// Divisível por 5 ==> Buzz
+
+// Divisível por 3 e 5 ==> FizzBuzz
+
+// Não éivisível por 3 e 5 ==> entrada
+
+// Não é um número ==> retorna que n é um número
+
+const resultado = fizzBuzz(11);
+console.log(resultado);
+
+
+function fizzBuzz(entrada){
+    if (typeof entrada !== 'number')
+        return 'Não é um número';
+    if (entrada % 3 === 0 && entrada % 5 === 0)
+        return 'FizzBuzz';
+    if (entrada % 3 === 0)
+        return 'Fizz';
+    if (entrada % 5 === 0)
+        return 'Buzz';
+
+
+    return entrada;
+    
+}
+}
+
+
+*Medidor de velocidade(Mini-projeto 4){
+
+// Velocidade max = 70;
+// A cada 5km acima do limite, você ganha 1 ponto;
+// Math.Floor();
+// Caso pontos forem maior de 12 -> 'Carteira suspendida';
+verificarVelocidade(130);
+
+function verificarVelocidade(velocidade) {
+const velocidadeMaxima = 70;
+
+const kmPorPonto = 5;
+
+const limiteDePontos = 12;
+
+    if(velocidade <= velocidadeMaxima)
+        console.log('ok');
+    else{
+        const pontos = Math.floor(((velocidade - velocidadeMaxima) / kmPorPonto));
+        if(pontos >= limiteDePontos)
+            console.log('Carteira suspendida');
+        else
+            console.log('Pontos:',pontos);
+}    
+    
+}
+}
+
+*Parar ou impar?(Min-projeto 5){
+// Receber uma quantidade de valores parar avaliar
+// Função exibe se cada valor é par ou impar
+
+exibirTipo(10);
+function exibirTipo(limite) {
+    for( let i = 0; i <= limite; i++){
+        if( i % 2 === 0)
+        console.log(i,'PAR')
+        else
+            console.log(i,'IMPAR')
+        
+    }
+}
+}
+
+*Encontre o string(Mini-projeto 6){
+    // Criar um método parar ler propriedade de um objeto e exibir somente as propriadades do tipo string que estão nesse objeto
+
+const filme = {
+    titulo : 'Vingadores',
+    ano : 2018,
+    diretor : 'Rodin',
+    personagem : 'Thor'
+}
+
+exibirPropriedades(filme);
+function exibirPropriedades(obj){
+    for (prop in obj)
+        if(typeof obj[prop] === 'string')
+            console.log(prop,':',obj[prop])
+        
+}
+}
+
+*Multiplos de 3 e 5 (Mini-projeto7){
+    
+    // Criar função somar que retorna a soma  de todos os múltiplos de 3 e 5
+
+// Multiplos de 3: 3,6,9
+// Multiplos de 5: 10
+
+// armazenar os multiplos de 3
+// armazenas os multiplos de 5
+// somar os dois
+
+somar(10);
+function somar(limite) {
+    let multiplosDe3 = 0;
+    let multiplosDe5 = 0;
+    for(i = 0; i <= limite; i++){
+        if(i % 3 === 0)
+            multiplosDe3 += i;
+        if(i % 5 === 0)
+            multiplosDe5 += i;
+    }
+let soma = multiplosDe3 + multiplosDe5;
+console.log(soma);
+}
+
+}
+
+*mini-projeto 8{
+    // Nota escolar.
+
+// 0-59: F;
+// 60-69: D;
+// 70-79: C;
+// 80-89: B;
+// 90-100: A;
+const array = [100,70,80];
+
+console.log('Nota:',mediaDoAluno(array));
+
+function mediaDoAluno(notas) {
+let resultado = Math.floor((array[0] + array[1] + array[2]) / (array.length));
+
+console.log(resultado);
+
+    if(resultado < 59) return 'F';
+    if(resultado < 69) return 'D';
+    if(resultado < 79) return 'C';
+    if(resultado < 89) return 'B';
+    if(resultado < 100) return 'A';
+        
+}
+}
+
+*Mini-projeto 9{
+    // Criar uma funcão que exibe a quantidade de *
+
+exibirAsteriscos(10);
+
+function exibirAsteriscos(linhas){
+    // let padrao = '';
+    // for(let linha = 1; linha <= linhas; linha ++){
+    //     padrao += '*';
+    //     console.log(padrao);
+    // }
+
+    for(let linha = 1; linha <= linhas; linha++){
+        let padrao = '';
+        for(let i = 0; i < linha; i++){
+            padrao += '*';
+        }
+        console.log(padrao);
+    } 
+   
+}
+}
+
+*Mini-projeto8{
+// Criar função para mostrar números primos
+
+// Primos
+// Compostos
+
+// Ex: 10, 11
+exibirNumerosPrimmos(15);
+
+function exibirNumerosPrimmos(limite){
+    for(let numero = 2; numero <= limite; numero++){
+        
+        if(numeroPrimo(numero)) console.log(numero);
+    }
+}
+
+function numeroPrimo(numero){
+
+        
+        for(let divisor = 2; divisor < numero; divisor++){
+            if(numero % divisor === 0) {
+                return false;
+            }else{
+                return true
+            }
+        }
+        
+
+
+}
+}
+
+*Factory functions{
+    // Javascript Aula 34 - Factory Funcitions (Funções de fábrica)
+
+const celular = {
+    marcaCelular : 'ASUS',
+    tamanhoTela: {
+        vertical : 155,
+        horizontal :75,
+    },
+    capacidadeBaateria : 5000,
+    ligar : function(){
+        console.log('Fazendo ligação');
+    }
+}
+
+// Javascript Aula 34 - Factory Funcitions (Funções de fábrica)
+
+function criarCelular(marcaCelular,tamanhoTela,capacidadeBaateria){
+    return  {
+        marcaCelular,
+        tamanhoTela,
+        capacidadeBaateria,
+        ligar(){
+            console.log('Fazendo ligação');
+        }
+    }
+
+    
+}
+
+const celular1 = criarCelular('Zefone',5.5,50000);
+console.log(celular1);
+}
+
+*constructions function{
+// Pascal Case - UmDoisTresQuatro.
+function Celular(marcaCelular,tamanhoTela,capacidadeBateria,){
+    this.marcaCelular = marcaCelular,
+    this.tamanhoTelaa = tamanhoTela,
+    this.capacidadeBateria = capacidadeBateria,
+    this.ligar = function(){
+        console.log("Fazendo Ligação...")
+    }
+}
+
+const celular = new Celular('Asus',5.5,5000);
+console.log(celular);
+
+}
+
+*Natureza dinâmica de Objetos{
+    // Javascript Aula 36 - Natureza dinâmica de Objetos
+console.log('mouse 1:');
+
+const mouse1 = {
+    cor : 'red',
+    marca: 'dazz'
+}
+
+//Para adicionar é só colocar o nome da const e oq vc quer adicionar:
+mouse1.velocidade = 5000;
+mouse1.trocarDPI = function(){
+    console.log('mudando sua DPI');
+}
+console.log(mouse1);
+
+//Para deletar é só usar o comando delete
+const mouse = {
+    cor : 'red',
+    marca: 'dazz'
+}
+
+//Para adicionar é só colocar o nome da const e oq vc quer adicionar:
+console.log('mouse 2:');
+
+mouse.velocidade = 5000;
+mouse.trocarDPI = function(){
+    console.log('mudando sua DPI');
+}
+
+delete mouse.velocidade;
+delete mouse.trocarDPI;
+console.log(mouse);
+}
+
+*Clonar Objetos{
+    const celular = {
+    marcaCelular : 'Asus',
+    tamanhoTela : {
+        vertical : 155,
+        horizontal : 75
+    },
+    ligar: function(){
+        console.log("Fazendo ligação...")
+    }
+}
+
+//Com o metodo Object.assign vc pode clonar e modificar o obj
+const novoObjet = Object.assign({
+    bateria: 5000
+},celular);
+console.log(novoObjet);
+
+//Com o {...Nome do obj} vc pode clonar de um jeito mais rapido
+const objeto2 = {...celular};
+console.log(object2);
+}
+
+*Math{
+
+ºMath.random(): Jera números aleatórios
+
+ºMath.max(3,6,8,10): Fala qual valor é o maior
+
+ºMath.min(5,8,4,8): Fala qual é o menor
+
+ºMath.abs(x): Retorna o módulo, ou valor absoluto, de um número (
+
+| x |
+
+)
+
+ºMath.acos(x): Retorna o arco-coseno de um número (
+
+arccos x
+
+)
+
+ºMath.acosh(x): Retorna o arco-seno de um número (
+
+arcsin x
+
+)
+
+ºMath.asin(x): Retorna o arco-seno de um número (
+
+arcsin x
+
+)
+
+ºMath.asinh(x): Retorna o arco-seno hiperbólico de um número.
+
+ºMath.atan(x): Retorna o arco-tangente de um número (
+
+arctan x
+
+)
+
+ºMath.atanh(x): Retorna o arco-tangente hiperbólico de um número (
+
+arctan x
+
+)
+
+
+
+
+dentre vários outros.
+}
+
+*String{
+    // Tipo primitivo
+const mensagem = 'minha primeira mensagam';
+// Ttpo obj
+const outraMensagem = new String('bom dia');
+
+// Para ver o tamanho da mensagem = oNomeDaMensagem.length
+// Para ver uma letra específica = oNomeDaMensagem[]
+// Para verificar se a alguma palvra = oNomeDaMensagem.includes('O texto que vc quer adicionar')
+// Para verificar se começa com qual palavra = oNomeDaPalavra.startswith('A palavra')
+// Para verificar se retima = oNomeDaPalavra.endswith('A palavra')
+// Para ver qual o indise da palavra = oNomeDaPalavra.indexOf('A palavra')
+// Para substituir  alguma palavra = oNomeDaPalavra.replace('a palava que vc quer mudar','a palavra nova')
+// Para tirar os espeços a mais = oNomeDaPalavra.trim()
+// Repartir por algo = oNomeDaPalavra.split('oq que vc quer que seja usado para separar')
+
+}
+
+*Template literal{
+    // Javascript Aula 39 -Templte literal
+// Obj {}
+// Boolean true ou false
+// string "" ou ''
+// template ``
+const nome = 'João';
+
+const email = `Ola ${nome}
+
+Obrigado por se escraver
+
+não se esqueça de ativar as notificações`;
+
+}
+
+*Date{
+    // Date
+
+const data1 = new Date();
+const data2 = new Date('March 06 2023 09:30');
+const data3 = new Date(2023,02,06,9,30);
+
+
+data3.setFullYear(2040);
+}
+
+*Montador de andereço{
+    // Javascript - Obj Endereço
+
+// Crair obj endereço que contem:
+// Rua
+// Cidade
+
+//Criar uma função para exbir:
+
+let endereco = {
+    Rua : 'a',
+    Cidade : 'b',
+    Estado : 'c',
+};
+
+function exibirEndereco(endereco){
+    for (let chave in endereco){
+        console.log(chave,endereco[chave]);
+    }
+}
+
+exibirEndereco(endereco);
+}
+
+*Encontra a Igualdade{
+    // Exercìcio 43 - igualdade de Objetos (Exercício)
+
+function Endereco(rua,cidade,cep){
+    this.rua = rua,
+    this.cidade = cidade,
+    this.cep = cep
+}
+
+const endereco1 = new Endereco('a','b','c');
+const endereco2 = new Endereco('a','b','c');
+
+function saoIguais (endereco1,endereco2){
+    // Comparar se as propriedade são iguais
+    return  endereco1.rua === endereco2.rua &&
+            endereco1.cidade === endereco2.cidade &&
+            endereco1.cep === endereco2.cep
+}
+
+console.log(saoIguais(endereco1,endereco2));
+
+function temEnderecoMemoriaIguais(endereco1,endereco2){
+    return endereco1 === endereco2
+}
+
+console.log(temEnderecoMemoriaIguais(endereco1,endereco2));
+}
+
+*Montador de Postagem de blog(mini-projeto 13){
+    // Javascript Aula 45 - Obj Postagem de Blog(Exercício)
+
+let postagem = {
+    titulo : 'a',
+    mensagem : 'b',
+    autor: 'c',
+    visualizacoes : 25,
+    comentarios : [
+        {autor: 'a', mensagem: 'b'},
+        {autor: 'a', mensagem: 'b'}
+    ],
+    estáAoVivo : 'Está avo vivo'
+}
+
+console.log(postagem);
+}
+
+*Ex, constructor function{
+    // Javascript Aula 46 - Constructor functon(exercício)
+function Postagem(titulo,mensagem,autor){
+    this.titulo = titulo,
+    this.mensagem = mensagem,
+    this.autor = autor,
+    this.visualizacoes = 0,
+    this.comentarios = [],
+    this.estaAoVivo = false
+}
+
+let postagem = new Postagem('a','b','c');
+
+console.log(postagem);
+}
+
+*Faixa de Preço{
+    // Javascript Aula 47 - Faixa de Preço (Exercício)
+
+// Primeira opção
+let faixas = [
+    {tooltip: 'Até 700', minimo:0,maximo:700},
+    {tooltip: '700 a 1000', minimo:700,maximo:1000},
+    {tooltip: '1000 a 1500', minimo:1000,maximo:1500}
+];
+
+// Segunda opç(factory function)
+function criarFaixaPreco(tooltip,minimo,maximo){
+    return{
+        tooltip,
+        minimo,
+        maximo
+    }
+}
+
+let  faixas2 = [
+    criarFaixaPreco('a',100,250),
+    criarFaixaPreco('b',700,1000),
+    criarFaixaPreco('m',400,650)
+]
+
+// Terçeira ops(construitor function)
+
+function FaixaPreço (tooltip,minimo,maximo){
+    this.tooltip = tooltip
+    this.minimo = minimo
+    this.maximo = maximo
+}
+
+let faixas3 = [
+    new FaixaPreço('o',10,30),
+    new FaixaPreço('h',103,530),
+    new FaixaPreço('l',110,320),
+    new FaixaPreço('p',140,560)
+]
+console.log(faixas);
+console.log(faixas2);
+console.log(faixas3);
+}
+
+*Introdução a arrys{
+    // Javascript Aula 49 - Introdução a arrys
+
+// add novos elementos
+// encontrar elementos
+// remover elementos
+// dividir elementos
+// dividir arrys
+// combinar arrys
+
+//_____________________________________________________________________________________________________________________________________________________
+// add elementos:
+const numeros = [1,2,3];
+
+// Início:
+numeros.unshift(0);
+console.log(numeros);
+// Meio:
+numeros.splice(1,0,'a');  //<== cordenada,se quer deletar,oq vai colocar.
+console.log(numeros);
+// Fim:
+numeros.push(5);
+console.log(numeros);
+//___________________________________________________________________________________________________________________________________
+// Encontrar elementos(Primitivos):
+const numeros1 = [1,2,3,4,5];
+
+//indexOf():
+console.log(numeros1.indexOf(2)); //<== indexOf()
+
+//lastindexOf():
+console.log(numeros1.lastIndexOf(1)); // <== Vai buscar a ultima ocorrencia
+
+
+const marcas = [
+    {d1:1,nome: 'a'},
+    {d1:2,nome: 'b'},
+    {d1:3,nome: 'c'},
+    {d1:4,nome: 'd'}
+];
+
+const marca = marcas.find(function(marcas){
+    return  marcas.nome === 'a';
+
+});
+
+console.log(marca);
+
+
+}
+
+*Arrow functions{
+    // Javascript Aula 59 - Arrow functions
+
+const marcas = [
+    {d1:1,nome: 'a'},
+    {d1:2,nome: 'b'},
+    {d1:3,nome: 'c'},
+    {d1:4,nome: 'd'}
+];
+
+console.log(marcas.find(marcas => marcas.nome === 'a' ));
+
+
+
+}
+
+*Removendo elementos do array{
+    //Javascript Aula 57 - Removendo elementos do array
+const number = [1,2,3,4,5,6];
+
+// number.push();
+// number.unshift();
+// number.splice();
+
+//Final
+
+const ultimo = number.pop();
+console.log(ultimo);
+console.log(number);
+//Início
+
+const inicio = number.shift();
+console.log(inicio);
+console.log(number);
+//Meio
+
+const meio = number.splice(2,1);
+console.log(meio);
+console.log(number);
+}
+
+*Esvaziando um array{
+    //Javascript Aula 59 - Esvaziando um array
+
+//Primeira opção:
+const numeros = [1,2,3,4,5,6];
+
+numeros.length = 0;  //<== 1º         <== OPÇÃO MAIS RECOMENDADA
+
+//___________________________________________________________________________________________________________________________________________________
+
+//Segunda opção:
+const numeros1 = [1,2,3,4,5,6];
+
+numeros.splice(0,numeros,length); //<==2º
+
+//___________________________________________________________________________________________________________________________________________________
+
+//Terceira opção
+
+const numero2 = [1,2,3,4,5,6];
+
+while(numero2 > 0)             //<==Não recomendado usar
+    numero2.pop();
+}
+
+*Combinando um array{
+    // Javascript Aula 90 - Combinando um array
+
+const primeiro = [1,2,3];
+const segundo = [4,5,6];
+
+//Combinar: concat
+const combinando = primeiro.concat(segundo);
+console.log(combinando);
+___________________________________________________________________________________________________________________________________________________
+//Dividir: slice()
+const cortado = combinando.slice(1,3);  //<== slice(começo,fim) ou slice(especifico)
+console.log(cortado);
+}
+
+*Operador spread{
+    //Javascript Aula 91 - Operador spread
+
+const primeiro = [1,2,3];
+const segundo = [4,5,6];
+
+//const unir = primeiro.concat(segundo);
+const unir = [...primeiro,'MODIFICAÇÃO',...segundo,'*'];  //<== Um jeito para unir e modificar de um jeito mais fácil.
+console.log(unir);
+// const dividir = primeiro.slice();
+
+const clonado = [...unir];  // <=== tbm serve para clonar.
+console.log(clonado);
+
+//Spread();
+
+
+
+const primeiro1 = [1,2,3];
+const segundo1 = [4,5,6];
+
+
+const imprimir = [...primeiro1,'%',...segundo1];
+
+console.log(imprimir);
+}
+
+*Foreach{
+    // Javascript Aula 92 - Foreach
+
+const numeros  = [1,2,3,4,5,6];
+
+//forEach
+
+numeros.forEach((numero,indice) => console.log(numero,indice));
+}
+
+*Comdificando arrays{
+    //Javascript Aula 93 - Combinando arrays
+
+const numeros = [1,2,3,4,5];
+
+const combinado = numeros.join('.');  //<== Colocar algo entre os itens
+console.log(combinado);
+
+const frase = "Olá benvindo ao curso";
+const resultado = frase.split(' ');  //<== separar a cada certa condição que vc determinar, no caso vai separa a palavra a cada espeço
+console.log(resultado);
+
+
+console.log(resultado.join('-'));
+ 
+}
+
+*Recebendo dados (Ipt){
+    //Javascript Aula 93 - Recebendo dados (Inpt)
+
+let corFavorita = prompt('Qual é sua cor favorita????');
+
+if (corFavorita == 'Preto'){
+    console.log('Essa tbm é minha cor favorita');
+}else{
+    console.log('Prefiro preto')
+}
+
+let anoNasceu = prompt('qual ano que vc nasceu');
+
+let ano = prompt('em que ano que nós estamos')
+
+let idade = ano - anoNasceu;
+
+if (idade >= 18){
+    console.log('Você tem',idade,'anos, e é de maior')
+}else{
+    console.log('Você tem',idade,'anos, e não é de maoir')
+}
+
+}
+
+*Introdução a manipulação de dom{
+    //Javascript Aula 94 - Introdução a manipulação de dom
+document.getElementById('roberto carlos'); //<== com o getElementById(), podemos acessar algum documento pelo id.
+                                                                                                                    //<== com isso podemos alterar o texto do site.
+document.getElementById('roberto carlos').innerText = 'OIOIOI'; //<== com ele podemos acessar as propriedades tbm, como por exemplo usando o innerText, para acessar o texto
+
+//O msm podemos fazer com as classes 
+document.getElementsByClassName('roberto carlos');
+
+document.getElementsByClassName('roberto carlos')[0].value = 'OIOIOIOI'; //<== O [0] é para escolher o primeiro indice do array
+document.getElementsByClassName('roberto carlos')[0].innerHTML = 'OIOIOIOI'; //<== O [0] é para escolher o primeiro indice do array      <== Essas sãao as principais formas de trocar o texto de um elemnto.
+document.getElementsByClassName('roberto carlos')[0].innerText = 'OIOIOIOI'; //<== O [0] é para escolher o primeiro indice do array
+}
+
+*Manipulação de dom {
+        <title>Curso JavaScritp</title>
+    <script src="./scripts.js"></script>
+</head>
+<body>
+    <h1>Festa!!!!!</h1>
+    <h2>Bem vindo a festa</h2>
+    <input id="nome" type="text" placeholder="Qual o seu nome?"></input>
+    <h3>Quem te convidou para essa festa?</h3>
+    <input type="text" id="convidadoPor" placeholder="Quem te convidou"></input>
+    <button onclick="VerificarEntrada()">Verificar se vc pode entrar</button>
+    <h4>Quem te permitiu entrar</h4>
+    <label for="" id="PermissaoEntrada">Pesquisando...</label>
+
+    
+</body>
+
+No Javascript:
+
+function VerificarEntrada(){
+NomeConvidado  =  document.getElementById('nome').valure;
+ConvidadosCristian = ['Joao','Luiz','JoaoV','Bruno','Roberto']
+
+if (ConvidadosCristian.includes('NomeConvidado')){
+    document.getElementById('PermissaoEntrada').innerText = 'Você pode entrar!!'
+
+} else {
+    document.getElementById('PermissaoEntrada').innerText = 'Você não pode entrar!!!!!'
+}
+
+}
+
+
+
+
+}
+                                                                              
+                *****************       *                ****                ****
+                *                       *               *    *              *    *
+                *                       *              *      *            *      *
+                *******                 *             *        *          *        *
+                *                       *            *          *        *          *
+                *                       *           *            *      *            *
+                *                       *          *              *   *               *
+                *                       *         *                * *                 *
+                *                       *        *                  *                   *
